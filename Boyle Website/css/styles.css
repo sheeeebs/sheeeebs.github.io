@@ -1,0 +1,75 @@
+html, body {
+	height: 100%; /* This is needed to correctly calculate the height for child elements*/
+	font-family: 'Raleway', sans-serif;
+	
+}
+body {
+	padding-top: 70px; /*fixed top nav bar */
+}
+
+
+.window {
+	height: 100%;
+	background-position: 0 50%; /* This anchors the background image*/
+	background-size: cover; /* This scales & crops the background image so that it will cover the whole window*/
+	background-repeat: no-repeat;
+	background-attachment: fixed; /* This keeps the background from scrolling with the page*/
+	width: 100%;
+	/* this section will center the content vertically in the container using a flex box*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+.window .title {
+	font-size: 10vw; /* this sizes the font based on the viewport*/
+	color: rgba(255,255,255,.8); /* rgba sets the color based on 0-255 for red, green, blue and 0-1 for the alpha */
+	font-weight: bold;
+	margin: auto;
+	text-shadow: 0 0 10vh rgba(0,0,0,.4);
+	
+}
+.window1 {
+	background-image: url("http://i.imgur.com/O6n5UGJ.jpg");
+}
+.window2 {
+	background-image: url("http://i.imgur.com/YwFJ5VY.jpg");
+}
+.window3 {
+	background-image: url("http://www.ronputnamphoto.com/wp-content/uploads/galleries/post-46/Honey-Run-Covered-Bridge-at-sunset.jpg");
+}
+.window4 {
+	background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/07/4f/c0/aa/wine-time.jpg");
+}
+.window5 {
+	background-image: url("http://i.imgur.com/voiXSPo.jpg");
+}
+.window6 {
+	background-image: url("http://i.imgur.com/JrmOG1g.jpg");
+}
+
+
+.contentblock {
+	height: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 10vh rgba(0,0,0,.4);
+}
+
+
+/* Bootstrap overrides */
+.navbar-default{
+	background-color: black;
+	
+	
+}
+.navbar-default .navbar-nav > li > a {
+	color: white;
+	
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #e7e7e7;
+	
+}
+.navbar-default .navbar-brand {
+	color: white;
+}
