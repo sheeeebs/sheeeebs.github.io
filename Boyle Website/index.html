@@ -9,7 +9,9 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<link href="css/styles.css" rel="stylesheet" type='text/css'/>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
-		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA6PvXXXN7YtaDjRqcmmtjoH7olbUDbqM&callback=initMap"
+  async defer>
+</script>
 		
 
 
@@ -175,7 +177,7 @@
       function initMap() {
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
-            center: {lat: 44.540, lng: -78.546},
+            center: {lat: 39.7285, lng: -121.7035},
             zoom: 8
         });
       }
